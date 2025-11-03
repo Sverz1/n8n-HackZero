@@ -311,6 +311,7 @@ export const useChatStore = defineStore(CHAT_STORE, () => {
 				agentName: null,
 				createdAt: new Date().toISOString(),
 				updatedAt: new Date().toISOString(),
+				tools: [],
 				...flattenModel(streaming.value.model),
 			},
 		];
