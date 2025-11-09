@@ -6,10 +6,6 @@ services:
       url: docker.n8n.io/n8nio/n8n:latest
     env: production
     plan: free
-    disk:
-      name: n8n-data
-      mountPath: /home/node/.n8n
-      sizeGB: 1
     envVars:
       - key: PORT
         value: 5678
